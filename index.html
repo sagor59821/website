@@ -8,11 +8,16 @@
 		<meta name="keywords" content="html,HTML"/>
 		<meta name="author" content="Md Sagor"/>
 		<style> body{background-color:lightblue;} </style>
+		<script>
+		
+		</script>
 		form.addEventListener('submit', function(event) {
   event.preventDefault();
   alert('ধন্যবাদ!');
-  this.reset();
+  this.reset();	
 });
+	</script>
+
 
 
 	</head>
@@ -59,7 +64,7 @@
 			
 		<h2>আমার সাথে যোগাযোগ করুন</h2>
 
-<form action="https://formsubmit.co/abdurrahman41133@gmail.com" method="Post">
+<form id="contactform" action="https://formsubmit.co/abdurrahman41133@gmail.com" method="Post" unsubmit="alert('ধন্যবাদ! তথ্য পাওয়া গেছে');" >
 
 <lebel>আপনার নাম </lebel><br>
 <input type="text" name="name" required><br></br>
@@ -73,6 +78,11 @@
 <button type="submit">পাঠান</button>
 </form>
 
+<script>		
+   function showThankYou(){
+	alert('ধন্যবাদ! তোমার তথ্য পেয়েছি।');
+	}
+	</script>	
 </body>
 
 
