@@ -8,6 +8,12 @@
 		<meta name="keywords" content="html,HTML"/>
 		<meta name="author" content="Md Sagor"/>
 		<style> body{background-color:lightblue;} </style>
+		form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  alert('ধন্যবাদ!');
+  this.reset();
+});
+
 
 	</head>
 
